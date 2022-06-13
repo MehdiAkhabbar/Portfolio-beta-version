@@ -1,0 +1,460 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width:0.7rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #FEF9F8 ;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #1f2223;
+}
+
+body{
+    background-color:  ivory;
+}
+
+.split{
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, #1f2223 50%, ivory 50%);
+    background: -webkit-linear-gradient(90deg,  #1f2223 50%, ivory 50%);
+    background: linear-gradient(90deg, #1f2223 50%, ivory 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#8300fe",GradientType=1); 
+    height: 100vh;
+    }
+
+/* ===============
+    Navbar
+   ==============*/
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links .list-item {
+    display: inline-block;
+    padding: 26px 28px;   
+    margin-bottom: 10px; 
+}
+
+.navbar a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.logo{
+    color: 	ivory;
+    letter-spacing: 1px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    transition: 0.3s ease-in;
+    padding-right: 26rem;
+    padding-top: 1px;
+    transition: 0.3s;
+}
+
+#contact-btn{
+    padding: 10px 25px;
+    color: #1f2223;
+    border-radius: 6px;
+    transition: all 0.6s ease-in-out;
+    margin-right: 19px;
+    font-weight: 500;
+    border: 2px solid #1f2223;
+    background-color: ivory;
+    color: #1f2223;
+}
+
+#contact-btn:hover{
+    border: 2px solid #1f2223;
+    background-color: ivory;
+    color: #1f2223;
+    background-color: #2C2F32;
+    color: #FEF9F8;
+}
+
+#github-icon{
+    font-size:  30px;
+    padding-left: 17px;
+    cursor: pointer;
+    position: relative;
+    top: 6.3px;
+    transition: all 0.6s ease-in-out;
+    color: #2d2d2d;
+}
+
+#github-icon:hover{
+    transform: translatey(-8px);
+}
+
+/* ===============
+    home-section
+   ==============*/
+section{
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+aside .image-aside >img{
+    width: 97%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 3.75rem;
+    letter-spacing: 1px;
+    padding-top: 3rem;
+}
+
+main h3{
+    font-weight: 550;
+    color: ivory ;
+    letter-spacing: 1px;
+}
+
+main h3 span{
+    color: #1f2223;
+}
+
+#span-one{
+    color: ivory ;
+}
+
+main p {
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 0.6;
+    color: 	#FEF9F8;
+}
+
+
+/* ===============
+   about-section
+   ==============*/
+
+#about-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container-section{
+    width: 70%;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction:column;
+}
+
+.container-section h3{
+    padding-bottom: 50px;
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+#about-section h3::after{
+        content: '';
+        display: block;
+        height: 4px;
+        width:  140px;
+        background-color: #222;
+        margin: 0 auto;
+        margin-top: 20px;
+}
+
+.container-section p{
+    line-height: 2.3rem;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-left: 27px;
+    letter-spacing: 1px;
+}
+
+.hand-image img{
+    width: 32%;
+    position: relative;
+    right: 38rem;
+    top: 19rem;
+}
+
+.hands-up{
+    width: 25%;
+    position: absolute;
+    margin-top: 10px;
+}
+
+/* ===============
+    skills-section
+   ==============*/
+   
+#skills-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 6rem;
+    margin-top: 10px;
+}
+
+#skills-section h3{
+    padding-bottom: 50px;
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#skills-section h3::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width:  100px;
+    background-color: #222;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.first{
+    margin-top: 25px;
+}
+
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+    margin: 5px;
+  }
+
+  svg.radial-progress.html circle{
+    stroke: #1f2223;
+  }
+  svg.radial-progress.css circle{
+    stroke: #1f2223;
+  }
+  svg.radial-progress.javascript circle{
+    stroke: #1f2223;
+  }
+  svg.radial-progress.java circle{
+    stroke: #1f2223;
+  }
+  
+  svg.radial-progress circle {
+    fill: rgba(0,0,0,0);
+    stroke: #fff;
+    stroke-dashoffset: 219.91148575129; 
+    stroke-width: 7;
+  }
+  
+  svg.radial-progress circle.incomplete { opacity: 0.1; }
+  
+  svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+  
+  svg.radial-progress text {
+    fill: #222;
+    text-anchor: middle;
+}
+
+#skills-section h4{
+    font-size: 18px;
+    margin-top: 15px;
+    color: #2A363B;
+    font-weight: 400;
+}
+
+#title-tools{
+    margin-top: 7rem;
+}
+
+.container-tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.container-tools img{
+    width: 19%;
+    margin-top: 20px;
+    margin-right: 2rem;
+}
+
+.container-tools #sass{
+    width: 10%;
+    margin-bottom: 1rem;
+    margin-left: 21px;
+}
+
+/* ===============
+    contact-section
+   ==============*/
+   
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 1rem 16rem;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+form h3{
+    padding: 1rem 24rem;
+    padding-bottom: 50px;
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+form h3::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width:  100px;
+    background-color: #2d2d2d;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+form h4{
+    font-size: 2.5rem;
+    color: #2d2d2d;
+}
+
+form p{
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 0.6;;
+    line-height: 1.5rem;
+}
+
+form label{
+    font-size: 1.2rem;
+    color: #2d2d2d;
+    font-weight: 400;
+}
+
+form input , textarea{
+    width: 50%;
+    margin: 10px 0;
+    border: none;
+    padding: 1.3rem;
+    border-radius: 2px;
+    border: 3px solid #1f2223;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input:focus , textarea:focus{
+    border: 3px solid #ccc ;
+}
+
+button{
+    padding: 1.2rem 2.1rem;
+    background-color: #1f2223;
+    color: #FEF9F8;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    border: 2px solid #1f2223;
+}
+
+button:hover{
+    background-color: #FEF9F8;
+    color: #1f2223;
+    border: 2px solid #1f2223;
+}
+
+input:focus , textarea:focus{
+    outline: none;
+    caret-color: #2A363B;
+}
+
+/*============
+   footer-section
+   ==============*/
+
+footer{
+    background-color: transparent;
+    opacity: 0.9;
+    padding: 3rem;
+    color: #faf7f2;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.footer-container ul{
+    list-style: none;
+}
+
+.footer-container li {
+    display: inline-block;
+    transition: all 0.4s ease-in;
+}
+
+.footer-container a{
+    text-decoration: none;
+    color: #FAF7F2;
+    font-size: 1.3rem;
+    padding-top: 4rem;
+    padding: 19px;
+    background-color: #1f2223;
+    margin-left: 0.25rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-container a:hover{
+    background-color: ivory;
+    color:#1f2223;
+}
+
+.footer-container h4{
+    font-size: 1.1rem;
+    color: #1f2223;
+    opacity: 0.7;
+}
